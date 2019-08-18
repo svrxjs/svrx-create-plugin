@@ -1,0 +1,23 @@
+{
+  "name": "@svrx/create-plugin",
+  "version": "0.0.1",
+  "description": "Initialize a svrx plugin by running one command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-orpheus/svrx-create-plugin.git"
+  },
+  "keywords": [
+    "svrx",
+    "svrx-plugin"
+  ],
+  "author": "Cody Chan <int64ago@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/x-orpheus/svrx-create-plugin/issues"
+  },
+  "homepage": "https://github.com/x-orpheus/svrx-create-plugin#readme"
+}
