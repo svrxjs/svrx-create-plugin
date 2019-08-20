@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint \"**/*.js\"",
-    "lint:fix": "eslint \"**/*.js\" --fix"
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -25,14 +26,15 @@
     "@svrx/eslint-config": "^1.0.0",
     "eslint": "^6.2.0",
     "husky": "^3.0.4",
-    "lint-staged": "^9.2.3"
+    "lint-staged": "^9.2.3",
+    "standard-version": "^7.0.0"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-  "lint-staged" : {
+  "lint-staged": {
     "*.js": "eslint --fix"
   }
 }
