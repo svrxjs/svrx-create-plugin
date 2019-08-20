@@ -1,6 +1,6 @@
 {
   "name": "@svrx/create-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Initialize a svrx plugin by running one command.",
   "main": "index.js",
   "scripts": {
