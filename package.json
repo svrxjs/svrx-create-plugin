@@ -2,7 +2,12 @@
   "name": "@svrx/create-plugin",
   "version": "0.0.2",
   "description": "Initialize a svrx plugin by running one command.",
-  "main": "index.js",
+  "bin": "./bin/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "template"
+  ],
   "scripts": {
     "lint": "eslint \"**/*.js\"",
     "lint:fix": "eslint \"**/*.js\" --fix",
@@ -16,6 +21,9 @@
     "svrx",
     "svrx-plugin"
   ],
+  "engines": {
+    "node": ">=8.9.0"
+  },
   "author": "Cody Chan <int64ago@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -36,5 +44,13 @@
   },
   "lint-staged": {
     "*.js": "eslint --fix"
+  },
+  "dependencies": {
+    "change-case": "^3.1.0",
+    "ejs": "^2.6.2",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.0",
+    "svrx-util": "0.0.6",
+    "yargs": "^14.0.0"
   }
 }
