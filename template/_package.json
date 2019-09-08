@@ -2,5 +2,34 @@
   "name": "<%= packageName %>",
   "version": "0.0.1",
   "description": "<%= description %>",
-  "main": "index.js"
+  "main": "index.js",
+  "keywords": [
+    "svrx",
+    "svrx-plugin",
+    "<%= pluginName %>"
+  ],
+  "engines": {
+    "svrx": "~0.0"
+  },
+  "author": "<%= author %>",
+  "scripts": {
+    "lint": "eslint \"**/*.js\"",
+    "lint:fix": "eslint \"**/*.js\" --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@svrx/eslint-config": "^1.0.0",
+    "eslint": "^6.2.0",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "license": "MIT"
 }
