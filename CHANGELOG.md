@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.4...v0.0.5) (2019-09-08)
+
+
+### Features
+
+* add badges ([eaf107d](https://github.com/svrxjs/svrx-create-plugin/commit/eaf107d))
+* add tests ([96b9966](https://github.com/svrxjs/svrx-create-plugin/commit/96b9966))
+
 ### [0.0.4](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.3...v0.0.4) (2019-09-08)
 
 
