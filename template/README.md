@@ -1,10 +1,10 @@
-<%= packageName %>
+<%- packageName %>
 ---
 
 [![svrx](https://img.shields.io/badge/svrx-plugin-%23ff69b4?style=flat-square)](https://svrx.io/)
-[![npm](https://img.shields.io/npm/v/<%= packageName %>.svg?style=flat-square)](https://www.npmjs.com/package/<%= packageName %>)
+[![npm](https://img.shields.io/npm/v/<%- packageName %>.svg?style=flat-square)](https://www.npmjs.com/package/<%- packageName %>)
 
-<%= description %>
+<%- description %>
 
 ## Usage
 
@@ -13,7 +13,7 @@
 ### Via CLI
 
 ```bash
-svrx -p <%= pluginName %>
+svrx -p <%- pluginName %>
 ```
 
 ### Via API
@@ -21,7 +21,7 @@ svrx -p <%= pluginName %>
 ```js
 const svrx = require('svrx');
 
-svrx({ plugins: [ '<%= pluginName %>' ] }).start();
+svrx({ plugins: [ '<%- pluginName %>' ] }).start();
 ```
 
 ## Options

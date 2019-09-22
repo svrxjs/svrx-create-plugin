@@ -1,17 +1,17 @@
 {
-  "name": "<%= packageName %>",
+  "name": "<%- packageName %>",
   "version": "0.0.1",
-  "description": "<%= description %>",
+  "description": "<%- description %>",
   "main": "index.js",
   "keywords": [
     "svrx",
     "svrx-plugin",
-    "<%= pluginName %>"
+    "<%- pluginName %>"
   ],
   "engines": {
     "svrx": "~0.0"
   },
-  "author": "<%= author %>",
+  "author": "<%- author %>",
   "scripts": {
     "test": "mocha",
     "lint": "eslint \"**/*.js\"",
