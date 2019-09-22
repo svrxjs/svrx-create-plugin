@@ -19,9 +19,9 @@ svrx -p <%- pluginName %>
 ### Via API
 
 ```js
-const svrx = require('svrx');
+const Svrx = require('svrx');
 
-svrx({ plugins: [ '<%- pluginName %>' ] }).start();
+new Svrx({ plugins: [ '<%- pluginName %>' ] }).start();
 ```
 
 ## Options

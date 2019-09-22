@@ -8,6 +8,8 @@ Initialize a svrx plugin by running one command.
 
 > Node >= 8 LTS
 
+#### Initialize
+
  - npm
 
 ```bash
@@ -18,4 +20,14 @@ npm init @svrx/plugin
 
 ```bash
 yarn create @svrx/plugin
+```
+
+#### Test with plugin
+
+> Make sure you've installed [svrx-cli](https://github.com/svrxjs/svrx-cli) globally.
+
+In plugin directory:
+
+```bash
+npm start
 ```
