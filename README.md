@@ -31,3 +31,9 @@ In plugin directory:
 ```bash
 npm start
 ```
+
+## Development
+
+ - `npm install`
+ - `git commit` follows the [spec](https://www.conventionalcommits.org)
+ - `npm run release`
