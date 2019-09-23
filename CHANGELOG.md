@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.5...v0.0.6) (2019-09-23)
+
+
+### Bug Fixes
+
+* remove svrx-cli to @svrx/cli ([c884484](https://github.com/svrxjs/svrx-create-plugin/commit/c884484))
+* use unescaped replacement ([a77fcb8](https://github.com/svrxjs/svrx-create-plugin/commit/a77fcb8))
+
+
+### Features
+
+* enable test plugin locally ([b53bec3](https://github.com/svrxjs/svrx-create-plugin/commit/b53bec3))
+* get default author from git config ([76df59c](https://github.com/svrxjs/svrx-create-plugin/commit/76df59c))
+
 ### [0.0.5](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.4...v0.0.5) (2019-09-08)
 
 
