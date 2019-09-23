@@ -1,9 +1,14 @@
 const path = require('path');
-const Manager = require(
-  path.resolve(require('global-modules'),
-  'svrx-cli',
-  'lib'
-));
+const { existsSync } = require('fs');
+
+const svrxCLI = path.resolve(require('global-modules'), '@svrx', 'cli', 'lib');
+
+if (!existsSync(svrxCLI)) {
+  console.log('Please install svrx-cli by `npm i @svrx/cli -g`');
+  process.exit();
+}
+
+const Manager = require(svrxCLI);
 
 process.chdir(__dirname);
 
@@ -12,6 +17,6 @@ manager.loadConfigFile();
 Manager.loadSvrx({}, {
   root: __dirname,
   plugins: [{ path: path.resolve('..') }],
-}).then(svrx => {
+}).then((svrx) => {
   svrx.start();
 });
