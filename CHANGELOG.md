@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.7...v0.0.8) (2019-09-24)
+
+
+### Bug Fixes
+
+* fix scope undefined ([31c39a0](https://github.com/svrxjs/svrx-create-plugin/commit/31c39a0))
+
 ### [0.0.7](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.6...v0.0.7) (2019-09-24)
 
 
