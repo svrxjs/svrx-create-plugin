@@ -1,40 +1,10 @@
-const chai = require('chai');
+const assert = require('assert');
 
-const {
-  assets = {},
-} = require('../index');
+const plugin = require('../index');
 
-chai.use(require('chai-json-schema'));
-
-const { assert } = chai;
-
-const assetsSchema = {
-  title: 'assets schema',
-  type: 'object',
-  properties: {
-    test: {
-      type: 'boolean',
-    },
-    script: {
-      type: 'array',
-      uniqueItems: true,
-      items: {
-        type: 'string',
-      },
-    },
-    style: {
-      type: 'array',
-      uniqueItems: true,
-      items: {
-        type: 'string',
-      },
-    },
-  },
-};
-
-describe('Format', () => {
-  it('assets schema', () => {
-    assert.jsonSchema(assets, assetsSchema);
+describe('<%- packageName %>', () => {
+  it('should be a object', () => {
+    assert.strictEqual(typeof plugin, 'object');
   });
   // TODO: add more tests
 });
