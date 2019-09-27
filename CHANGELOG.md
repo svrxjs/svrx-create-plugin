@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.9...v0.0.10) (2019-09-27)
+
+
+### Features
+
+* get packageName from projectName by default ([ddd5fb4](https://github.com/svrxjs/svrx-create-plugin/commit/ddd5fb4))
+* set engine version from current svrx ([c99db41](https://github.com/svrxjs/svrx-create-plugin/commit/c99db41))
+
 ### [0.0.9](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.8...v0.0.9) (2019-09-24)
 
 ### [0.0.8](https://github.com/svrxjs/svrx-create-plugin/compare/v0.0.7...v0.0.8) (2019-09-24)
