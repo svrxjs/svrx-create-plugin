@@ -9,7 +9,7 @@
     "<%- pluginName %>"
   ],
   "engines": {
-    "svrx": "~0.0"
+    "svrx": "<%- engineVersion %>"
   },
   "author": "<%- author %>",
   "scripts": {
@@ -25,10 +25,10 @@
     "chai": "^4.2.0",
     "chai-json-schema": "^1.5.1",
     "eslint": "^6.2.0",
-    "global-modules": "^2.0.0",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.3",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "requireg": "^0.2.2"
   },
   "husky": {
     "hooks": {
