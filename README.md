@@ -14,24 +14,16 @@ Initialize a svrx plugin by running one command.
 
 ```bash
 npm init @svrx/plugin
-```
-
-Publish as scoped npm package:
-
-```bash
-npm init @svrx/plugin --scope=<scope-name>
+# Publish npm package with scope
+# npm init @svrx/plugin --scope=<scope-name>
 ```
 
  - yarn
 
 ```bash
 yarn create @svrx/plugin
-```
-
-Publish as scoped npm package:
-
-```bash
-yarn create @svrx/plugin --scope=<scope-name>
+# Publish npm package with scope
+# yarn create @svrx/plugin --scope=<scope-name>
 ```
 
 #### Test with plugin
