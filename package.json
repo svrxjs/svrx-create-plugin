@@ -46,6 +46,7 @@
     "*.js": "eslint --fix"
   },
   "dependencies": {
+    "@svrx/util": "^1.1.4",
     "chalk": "^2.4.2",
     "change-case": "^3.1.0",
     "ejs": "^2.6.2",

@@ -1,20 +1,21 @@
+const { PackageManagerCreator, logger } = require('@svrx/util');
 const path = require('path');
-const reguireg = require('requireg');
 
-let Manager;
-try {
-  Manager = reguireg('@svrx/cli/lib');
-} catch (err) {
-  console.log('Please install svrx-cli by `npm i @svrx/cli -g`');
+const pm = PackageManagerCreator();
+const spinner = logger.spin('Loading svrx...');
+
+pm.load().then((svrxPkg) => {
+  const Svrx = svrxPkg.module;
+  if (spinner) spinner();
+
+  process.chdir(__dirname);
+  const server = new Svrx({
+    root: __dirname,
+    plugins: [{ path: path.resolve('..') }],
+  });
+  server.start();
+}).catch((e) => {
+  if (spinner) spinner();
+  console.log('svrx load error', e);
   process.exit();
-}
-
-process.chdir(__dirname);
-
-new Manager(); // eslint-disable-line
-Manager.loadSvrx({}, {
-  root: __dirname,
-  plugins: [{ path: path.resolve('..') }],
-}).then((svrx) => {
-  svrx.start();
 });
