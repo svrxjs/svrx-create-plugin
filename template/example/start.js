@@ -9,7 +9,7 @@ pm.load().then((svrxPkg) => {
   if (spinner) spinner();
 
   process.chdir(__dirname);
-  const server = new Svrx({}, {
+  const server = new Svrx({
     root: __dirname,
     plugins: [{ path: path.resolve('..') }],
   });
