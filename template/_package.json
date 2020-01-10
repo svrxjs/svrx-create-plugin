@@ -22,11 +22,11 @@
   "dependencies": {},
   "devDependencies": {
     "@svrx/eslint-config": "^1.0.0",
+    "@svrx/util": "^1.1.4",
     "eslint": "^6.2.0",
     "husky": "^3.0.4",
     "lint-staged": "^9.2.3",
-    "mocha": "^6.2.0",
-    "requireg": "^0.2.2"
+    "mocha": "^6.2.0"
   },
   "husky": {
     "hooks": {
